@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Saveur du Sénégal - Restaurant Sénégalais</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🍛 La Saveur du Sénégal</div>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#commande">Commander</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue à La Saveur du Sénégal</h1>
+            <p>Découvrez les saveurs authentiques du Sénégal</p>
+            <a href="#menu" class="btn btn-primary">Voir le Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Notre Menu</h2>
+            <p class="section-subtitle">Plats traditionnels sénégalais préparés avec amour</p>
+            
+            <div class="menu-grid">
+                <!-- Plats Principaux -->
+                <div class="menu-category">
+                    <h3>🥘 Plats Principaux</h3>
+                    
+                    <div class="dish" data-dish-id="thieboudienne" data-price="10472">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#F5DEB3" width="200" height="200"/>
+                                <circle cx="100" cy="100" r="70" fill="#CD853F"/>
+                                <circle cx="80" cy="80" r="15" fill="#FFD700"/>
+                                <circle cx="120" cy="85" r="12" fill="#FF8C00"/>
+                                <circle cx="95" cy="110" r="10" fill="#FFA500"/>
+                                <circle cx="115" cy="105" r="14" fill="#DAA520"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🍛</text>
+                            </svg>
+                        </div>
+                        <h4>Thiéboudienne</h4>
+                        <p class="description">Riz aux poissons, carottes, courges et sauce tomate. Le plat national du Sénégal</p>
+                        <span class="price">10 472 FCFA</span>
+                    </div>
+                    
+                    <div class="dish" data-dish-id="yassa" data-price="9161">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FFF8DC" width="200" height="200"/>
+                                <ellipse cx="100" cy="100" rx="60" ry="65" fill="#D2B48C"/>
+                                <circle cx="70" cy="70" r="20" fill="#FFE4B5"/>
+                                <circle cx="130" cy="75" r="18" fill="#F0E68C"/>
+                                <path d="M 85 110 Q 100 125 115 110" fill="#DAA520"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🍗</text>
+                            </svg>
+                        </div>
+                        <h4>Yassa Poulet</h4>
+                        <p class="description">Poulet mariné à l'oignon et citron, accompagné de riz blanc</p>
+                        <span class="price">9 161 FCFA</span>
+                    </div>
+                    
+                    <div class="dish" data-dish-id="mafe" data-price="9816">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FAEBD7" width="200" height="200"/>
+                                <circle cx="100" cy="100" r="65" fill="#A0522D"/>
+                                <circle cx="75" cy="85" r="12" fill="#8B4513"/>
+                                <circle cx="125" cy="90" r="15" fill="#A0522D"/>
+                                <circle cx="100" cy="120" r="18" fill="#8B4513"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🥘</text>
+                            </svg>
+                        </div>
+                        <h4>Mafé</h4>
+                        <p class="description">Ragoût de viande en sauce d'arachide avec légumes et riz</p>
+                        <span class="price">9 816 FCFA</span>
+                    </div>
+                    
+                    <div class="dish" data-dish-id="ceebu-jen" data-price="11127">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FFFACD" width="200" height="200"/>
+                                <circle cx="100" cy="100" r="65" fill="#FFE4B5"/>
+                                <path d="M 80 95 L 85 110 L 75 105 Z" fill="#FF6347"/>
+                                <path d="M 120 100 L 125 115 L 115 110 Z" fill="#FF6347"/>
+                                <circle cx="100" cy="75" r="8" fill="#90EE90"/>
+                                <circle cx="95" cy="120" r="7" fill="#FF8C00"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🐟</text>
+                            </svg>
+                        </div>
+                        <h4>Ceebu Jën</h4>
+                        <p class="description">Riz au poisson et légumes dans un bouillon savoureux</p>
+                        <span class="price">11 127 FCFA</span>
+                    </div>
+                </div>
+
+                <!-- Accompagnements -->
+                <div class="menu-category">
+                    <h3>🥕 Accompagnements</h3>
+                    
+                    <div class="dish" data-dish-id="riz-coco" data-price="3923">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FFFACD" width="200" height="200"/>
+                                <circle cx="100" cy="100" r="60" fill="#FFFACD"/>
+                                <circle cx="85" cy="85" r="8" fill="#F5F5DC"/>
+                                <circle cx="115" cy="90" r="9" fill="#F5F5DC"/>
+                                <circle cx="100" cy="110" r="7" fill="#F5F5DC"/>
+                                <circle cx="80" cy="105" r="6" fill="#F5F5DC"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🥥</text>
+                            </svg>
+                        </div>
+                        <h4>Riz au Lait de Coco</h4>
+                        <p class="description">Riz blanc cuit dans du lait de coco frais</p>
+                        <span class="price">3 923 FCFA</span>
+                    </div>
+                    
+                    <div class="dish" data-dish-id="attieke" data-price="3270">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FFE4B5" width="200" height="200"/>
+                                <circle cx="100" cy="100" r="65" fill="#DEB887"/>
+                                <circle cx="75" cy="75" r="5" fill="#D2B48C"/>
+                                <circle cx="110" cy="80" r="5" fill="#D2B48C"/>
+                                <circle cx="85" cy="110" r="5" fill="#D2B48C"/>
+                                <circle cx="125" cy="105" r="5" fill="#D2B48C"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🥔</text>
+                            </svg>
+                        </div>
+                        <h4>Attiéké</h4>
+                        <p class="description">Semoule de manioc fermentée, légère et savoureuse</p>
+                        <span class="price">3 270 FCFA</span>
+                    </div>
+                    
+                    <div class="dish" data-dish-id="salade" data-price="3923">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FFF8DC" width="200" height="200"/>
+                                <circle cx="100" cy="100" r="65" fill="#90EE90"/>
+                                <circle cx="75" cy="85" r="12" fill="#FF6347"/>
+                                <circle cx="125" cy="90" r="10" fill="#FF6347"/>
+                                <circle cx="100" cy="120" r="8" fill="#FFD700"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🥗</text>
+                            </svg>
+                        </div>
+                        <h4>Salade Sénégalaise</h4>
+                        <p class="description">Salade fraîche avec tomates, oignons et vinaigrette citron</p>
+                        <span class="price">3 923 FCFA</span>
+                    </div>
+                    
+                    <div class="dish" data-dish-id="plantain" data-price="2613">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FFE4B5" width="200" height="200"/>
+                                <path d="M 80 60 Q 70 100 80 140 Q 100 150 120 140 Q 130 100 120 60" fill="#FFD700"/>
+                                <path d="M 95 65 Q 90 100 95 135" fill="#FFA500" stroke-width="2" stroke="#FFA500"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🍌</text>
+                            </svg>
+                        </div>
+                        <h4>Plantain Frit</h4>
+                        <p class="description">Banane plantain frite croustillante</p>
+                        <span class="price">2 613 FCFA</span>
+                    </div>
+                </div>
+
+                <!-- Soupe & Entrées -->
+                <div class="menu-category">
+                    <h3>🍲 Soupes & Entrées</h3>
+                    
+                    <div class="dish" data-dish-id="soupe-poisson" data-price="5231">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FFF8DC" width="200" height="200"/>
+                                <path d="M 60 80 Q 100 50 140 80 L 140 140 Q 100 160 60 140 Z" fill="#FFE4B5"/>
+                                <path d="M 75 100 L 85 115 L 80 110" fill="#FF6347"/>
+                                <path d="M 115 105 L 125 120 L 120 115" fill="#FF6347"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🍲</text>
+                            </svg>
+                        </div>
+                        <h4>Soupe de Poisson</h4>
+                        <p class="description">Soupe riche au poisson frais avec légumes de saison</p>
+                        <span class="price">5 231 FCFA</span>
+                    </div>
+                    
+                    <div class="dish" data-dish-id="soupe-oignon" data-price="4578">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FFFACD" width="200" height="200"/>
+                                <path d="M 60 85 Q 100 55 140 85 L 140 140 Q 100 160 60 140 Z" fill="#FFA500"/>
+                                <circle cx="85" cy="100" r="8" fill="#FFD700"/>
+                                <circle cx="115" cy="105" r="7" fill="#FFD700"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🧅</text>
+                            </svg>
+                        </div>
+                        <h4>Soupe à l'Oignon</h4>
+                        <p class="description">Soupe traditionnelle onctueuse avec viande et fromage</p>
+                        <span class="price">4 578 FCFA</span>
+                    </div>
+                    
+                    <div class="dish" data-dish-id="accras" data-price="3923">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FFE4B5" width="200" height="200"/>
+                                <circle cx="75" cy="85" r="18" fill="#D4A76A"/>
+                                <circle cx="125" cy="80" r="20" fill="#D4A76A"/>
+                                <circle cx="100" cy="125" r="19" fill="#D4A76A"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🍟</text>
+                            </svg>
+                        </div>
+                        <h4>Accras de Poisson</h4>
+                        <p class="description">Beignets de poisson croustillants servis avec sauce pimentée</p>
+                        <span class="price">3 923 FCFA</span>
+                    </div>
+                    
+                    <div class="dish" data-dish-id="boulettes" data-price="3270">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FAEBD7" width="200" height="200"/>
+                                <circle cx="70" cy="80" r="22" fill="#8B4513"/>
+                                <circle cx="130" cy="85" r="24" fill="#8B4513"/>
+                                <circle cx="100" cy="130" r="20" fill="#8B4513"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🍖</text>
+                            </svg>
+                        </div>
+                        <h4>Boulettes de Viande</h4>
+                        <p class="description">Boulettes épicées servies avec sauce arachide</p>
+                        <span class="price">3 270 FCFA</span>
+                    </div>
+                </div>
+
+                <!-- Boissons -->
+                <div class="menu-category">
+                    <h3>🥤 Boissons</h3>
+                    
+                    <div class="dish" data-dish-id="jus-baobab" data-price="2613">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FFE4B5" width="200" height="200"/>
+                                <path d="M 70 60 L 75 150 L 125 150 L 130 60 Q 100 50 70 60" fill="#DAA520"/>
+                                <path d="M 80 70 L 82 140 L 118 140 L 120 70" fill="#FFD700"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🥤</text>
+                            </svg>
+                        </div>
+                        <h4>Jus de Baobab</h4>
+                        <p class="description">Boisson traditionnelle riche et rafraîchissante</p>
+                        <span class="price">2 613 FCFA</span>
+                    </div>
+                    
+                    <div class="dish" data-dish-id="jus-gingembre" data-price="2288">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FFE4B5" width="200" height="200"/>
+                                <path d="M 70 60 L 75 150 L 125 150 L 130 60 Q 100 50 70 60" fill="#FF8C00"/>
+                                <path d="M 80 70 L 82 140 L 118 140 L 120 70" fill="#FFA500"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🧃</text>
+                            </svg>
+                        </div>
+                        <h4>Jus de Gingembre</h4>
+                        <p class="description">Jus frais préparé avec du gingembre naturel</p>
+                        <span class="price">2 288 FCFA</span>
+                    </div>
+                    
+                    <div class="dish" data-dish-id="thiakry" data-price="3270">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FFE4B5" width="200" height="200"/>
+                                <circle cx="100" cy="100" r="65" fill="#F5DEB3"/>
+                                <circle cx="80" cy="85" r="8" fill="#8B4513"/>
+                                <circle cx="110" cy="80" r="8" fill="#8B4513"/>
+                                <circle cx="95" cy="115" r="8" fill="#8B4513"/>
+                                <circle cx="120" cy="110" r="8" fill="#8B4513"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">🍮</text>
+                            </svg>
+                        </div>
+                        <h4>Thiakry</h4>
+                        <p class="description">Dessert lacté à base de mil et cacahuètes</p>
+                        <span class="price">3 270 FCFA</span>
+                    </div>
+                    
+                    <div class="dish" data-dish-id="cafe" data-price="1961">
+                        <div class="dish-image">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <rect fill="#FFFACD" width="200" height="200"/>
+                                <path d="M 70 70 L 70 130 L 100 145 L 130 130 L 130 70 Q 100 60 70 70" fill="#8B4513"/>
+                                <rect x="130" y="90" width="20" height="35" rx="5" fill="#D2B48C"/>
+                                <text x="100" y="180" font-size="20" text-anchor="middle" fill="#2C5F2D">☕</text>
+                            </svg>
+                        </div>
+                        <h4>Café Sénégalais</h4>
+                        <p class="description">Café fort servit avec du lait condensé</p>
+                        <span class="price">1 961 FCFA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="commande" class="order">
+        <div class="container">
+            <h2>Commander En Ligne</h2>
+            <p class="section-subtitle">Préparez votre repas en quelques clics</p>
+
+            <div class="order-content">
+                <div class="order-menu">
+                    <h3>Sélectionnez vos plats</h3>
+                    <div class="order-items" id="orderItems">
+                        <!-- Les plats apparaîtront ici -->
+                    </div>
+                </div>
+
+                <div class="order-summary">
+                    <h3>Récapitulatif de Commande</h3>
+                    <div class="summary-items" id="summaryItems">
+                        <p class="empty-cart">Votre panier est vide</p>
+                    </div>
+                    <div class="summary-total">
+                        <h4>Total: <span id="totalPrice">0</span> FCFA</h4>
+                    </div>
+                    <form class="order-form" id="orderForm">
+                        <h4>Vos Informations</h4>
+                        <input type="text" name="name" placeholder="Votre nom" required>
+                        <input type="email" name="email" placeholder="Votre email" required>
+                        <input type="tel" name="phone" placeholder="Votre téléphone" required>
+                        <input type="text" name="address" placeholder="Votre adresse" required>
+                        <select name="delivery-time" required>
+                            <option value="">Horaire de livraison</option>
+                            <option value="11h-12h">11h - 12h</option>
+                            <option value="12h-13h">12h - 13h</option>
+                            <option value="13h-14h">13h - 14h</option>
+                            <option value="18h-19h">18h - 19h</option>
+                            <option value="19h-20h">19h - 20h</option>
+                            <option value="20h-21h">20h - 21h</option>
+                        </select>
+                        <textarea name="notes" placeholder="Notes de commande (optionnel)" rows="3"></textarea>
+                        <button type="submit" class="btn btn-primary">Confirmer la Commande</button>
+                        <button type="button" class="btn btn-secondary" id="clearCart">Vider le Panier</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>À Propos de Nous</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        <strong>La Saveur du Sénégal</strong> est un restaurant authentique dédié à la gastronomie sénégalaise. 
+                        Fondé en 2015, nous nous engageons à vous servir les meilleures saveurs d'Afrique de l'Ouest.
+                    </p>
+                    <p>
+                        Nos chefs cuisiniers, formés en Afrique, préparent chaque plat avec des ingrédients frais et authentiques. 
+                        Nous honorons les traditions culinaires sénégalaises tout en offrant un cadre chaleureux et accueillant.
+                    </p>
+                    <p>
+                        Que vous soyez un amoureux de la cuisine africaine ou simplement en quête de nouvelles expériences culinaires, 
+                        nous vous invitons à découvrir La Saveur du Sénégal.
+                    </p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <span class="feature-icon">👨‍🍳</span>
+                        <h4>Chefs Expérimentés</h4>
+                        <p>Nos chefs maîtrisent les recettes traditionnelles</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🌿</span>
+                        <h4>Ingrédients Frais</h4>
+                        <p>Produits sélectionnés avec soin chaque jour</p>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-icon">🏠</span>
+                        <h4>Ambiance Chaleureuse</h4>
+                        <p>Un cadre accueillant comme une famille</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Nous Contacter</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>123 Avenue de l'Afrique<br>75001 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>+33 1 23 45 67 89</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">✉️</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@lasaveurdusenegal.fr</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🕐</span>
+                        <div>
+                            <h4>Horaires</h4>
+                            <p>Lun-Jeu: 11h-22h<br>Ven-Dim: 11h-23h</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <input type="tel" placeholder="Votre téléphone">
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 La Saveur du Sénégal. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

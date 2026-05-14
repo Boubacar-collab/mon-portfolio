@@ -3,23 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
+  <title>Boubacar - Développeur Web Freelance</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="carte">
-    <h1>Bonjour, je suis Boubacar 👋</h1>
-    <p>Je crée des sites web professionnels et modernes pour les petites entreprises et entrepreneurs.</p>
+  <!-- NAV -->
+  <nav>
+    <div class="logo">👨‍💻 Boubacar</div>
+    <ul>
+      <li><a href="#apropos">À propos</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-    <div>
-      <span class="badge">HTML</span>
-      <span class="badge">CSS</span>
-      <span class="badge">Sites vitrines</span>
+  <!-- HERO -->
+  <section class="hero" id="apropos">
+    <div class="hero-content">
+      <h1>Salut, je suis Boubacar 👋</h1>
+      <p>Je crée des sites web professionnels et modernes<br>pour les entreprises et entrepreneurs.</p>
+      <div class="badges">
+        <span class="badge">HTML</span>
+        <span class="badge">CSS</span>
+        <span class="badge">Sites vitrines</span>
+        <span class="badge">Disponible</span>
+      </div>
+      <a href="#contact" class="bouton">Me contacter</a>
     </div>
+  </section>
 
-    <a class="bouton" href="mailto:bd000hd@gmail.com">Me contacter</a>
-  </div>
+  <!-- PROJETS -->
+  <section class="projets" id="projets">
+    <h2>Mes Projets</h2>
+    <div class="grille">
+
+      <div class="carte-projet">
+        <div class="emoji">🍕</div>
+        <h3>Chez Mamadou</h3>
+        <p>Site vitrine pour un restaurant africain avec menu interactif et section contact.</p>
+        <div class="tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Restaurant</span>
+        </div>
+        <a href="https://boubacar-collab.github.io/site-de-restaurant/" 
+           target="_blank" class="lien">Voir le site →</a>
+      </div>
+
+      <div class="carte-projet">
+        <div class="emoji">🚧</div>
+        <h3>Projet en cours...</h3>
+        <p>Un nouveau site vitrine est en cours de création. Revenez bientôt !</p>
+        <div class="tags">
+          <span class="tag">Bientôt</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Travaillons ensemble</h2>
+    <p>Tu as un projet de site web ? Écris-moi, je réponds sous 24h.</p>
+    <a href="mailto:tonemail@gmail.com" class="bouton">📧 M'envoyer un email</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Boubacar · Développeur Web Freelance · Dakar, Sénégal</p>
+  </footer>
 
 </body>
 </html>
